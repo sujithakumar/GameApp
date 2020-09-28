@@ -1,0 +1,23 @@
+*{
+     font-weight: bolder;
+}
+
+ul{
+    list-style-type: none;
+}
+ul li{
+    display: inline;
+    padding : 12px;
+    margin : 10px;
+    color: blueviolet;
+    font-size: larger;
+    border:3px solid aquamarine;
+    border-radius: 10px;
+}
+
+
+
+span{
+    background-color: palegreen;
+    padding: 5px;
+}

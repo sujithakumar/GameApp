@@ -1,0 +1,32 @@
+
+*{
+    margin : auto;
+    vertical-align: middle;
+    text-align: center;
+}
+.column, td {
+    float: left;
+    width: auto;
+    padding: 25px;
+    background-color:#aaa;
+    border: 1px solid;
+    animation-delay: 1s;
+    cursor: pointer;
+}
+.row:after , tr:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+.random{
+   display: table;
+    align-items: center;
+    align-content: center;
+    top: 30px;
+}
+
+a{
+    text-decoration: none;
+}

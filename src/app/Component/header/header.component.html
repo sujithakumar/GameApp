@@ -1,0 +1,30 @@
+<div>
+    <ul class="nav">
+
+        <li>Score
+            <span>{{ScoreCounter}}</span>
+        </li>
+        <li>
+            Level
+            <button class="btn btn-primary" (click)="slectLevel('3')">3*3</button>
+            <button class="btn btn-primary" (click)="slectLevel('4')">4*4</button>
+            <button class="btn btn-primary" (click)="slectLevel('6')">6*6</button>
+        </li>
+        <li>
+            <button class="btn btn-success" *ngIf="!timeUp" (click)="startTheGame()">start</button>
+            <button class="btn btn-danger disabled" *ngIf="timeUp" (click)="startTheGame()" disabled>start</button>
+
+        </li>
+        <li>High Score
+            <span>{{HighScore}}</span>
+        </li>
+        <li>
+            timer
+            <span>{{timer}}</span>
+        </li>
+    </ul>
+    <!-- <input type="hidden" [(ngModel)]="resetRequest" (change)="resetValues()" /> -->
+    <hr>
+    <app-body [rowsAndCols]="rowsAndCols" [startHighLighting]="startHighLighting"
+        (receiveMessage)="receiveMessage($event)"></app-body>
+</div>

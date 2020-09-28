@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "game-e2b51": {
+      "hosting": {
+        "GameBoard": [
+          "game-e2b51"
+        ]
+      }
+    }
+  }
+}
